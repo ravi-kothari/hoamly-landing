@@ -7,12 +7,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Valid email required' }, { status: 400 })
   }
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000'
+  const siteUrl = process.env.URL ?? 'https://hoamly.ai'
 
-  const res = await fetch(`${apiUrl}/api/v1/waitlist`, {
+  const formData = new URLSearchParams({
+    'form-name': 'waitlist',
+    email: body.email,
+  })
+
+  const res = await fetch(siteUrl, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email: body.email }),
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: formData.toString(),
   }).catch(() => null)
 
   if (!res || !res.ok) {
