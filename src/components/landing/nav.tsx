@@ -8,12 +8,6 @@ export function LandingNav() {
         <span className="text-indigo-400 brightness-110">HOA</span>
         <span className="text-white/90">mly</span>
       </a>
-      <a
-        href="#waitlist"
-        className="text-sm border border-indigo-500/40 text-indigo-400 px-4 py-2 rounded-lg hover:border-indigo-400 hover:text-indigo-300 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D]"
-      >
-        Request early access
-      </a>
     </nav>
   )
 }

@@ -66,8 +66,6 @@ export function LandingHero() {
           </div>
 
           <WaitlistForm />
-
-          <p className="text-xs text-neutral-600">No spam. No HOA fees.</p>
         </div>
       </div>
     </section>
