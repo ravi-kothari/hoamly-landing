@@ -26,7 +26,7 @@ export function WaitlistForm() {
 
   if (status === 'success') {
     return (
-      <p className="text-amber-400 text-sm py-3" role="status">
+      <p className="text-indigo-400 text-sm py-3" role="status">
         You&apos;re on the list. We&apos;ll be in touch.
       </p>
     )
@@ -47,12 +47,12 @@ export function WaitlistForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
           aria-label="Email address"
-          className="flex-1 bg-white/5 border border-white/10 focus:border-amber-500 rounded-lg px-4 py-2.5 text-white placeholder:text-neutral-600 outline-none transition-colors text-sm"
+          className="flex-1 bg-white/5 border border-white/10 focus:border-indigo-500 rounded-lg px-4 py-2.5 text-white placeholder:text-neutral-600 outline-none transition-colors text-sm"
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="bg-amber-500 hover:bg-amber-400 text-black font-medium px-5 py-2.5 rounded-lg transition-colors text-sm disabled:opacity-60 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D]"
+          className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm disabled:opacity-60 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D]"
         >
           {status === 'loading' ? 'Sending…' : 'Request early access'}
         </button>

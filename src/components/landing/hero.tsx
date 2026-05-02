@@ -11,12 +11,12 @@ const CHIPS = [
 export function LandingHero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 pb-12">
-      {/* Amber radial glow */}
+      {/* Indigo radial glow */}
       <div
         className="absolute inset-0 flex items-center justify-center pointer-events-none"
         aria-hidden="true"
       >
-        <div className="w-[600px] h-[600px] rounded-full bg-amber-500/10 blur-3xl" />
+        <div className="w-[700px] h-[700px] rounded-full bg-indigo-500/10 blur-3xl" />
       </div>
 
       {/* Grain texture overlay */}
@@ -30,35 +30,33 @@ export function LandingHero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto space-y-6">
-        <h1
-          className="font-serif text-5xl md:text-7xl text-white leading-tight tracking-tight"
-          aria-label="HOA management built for this decade. And the one after it."
-        >
+      <div className="relative z-10 max-w-5xl mx-auto space-y-8">
+        <h1 className="font-serif text-5xl md:text-7xl text-white leading-[1.1] tracking-tight text-balance">
           HOA management built for this{' '}
-          <s className="text-white/30" aria-hidden="true">decade</s>
+          <span className="text-white/25 italic">decade</span>
           {'. '}
           And the one after it.
         </h1>
 
-        <p className="text-lg text-neutral-500 max-w-xl mx-auto leading-relaxed">
-          Built for HOAs tired of paying enterprise prices for software that looks like 2009.
-        </p>
+        <div className="space-y-2 max-w-2xl mx-auto">
+          <p className="text-lg text-neutral-400 leading-relaxed">
+            Built for HOAs tired of paying enterprise prices for software that looks like 2009.
+          </p>
+          <p className="text-base text-neutral-500">
+            Your management company deserves better. So do your residents.
+          </p>
+        </div>
 
-        <p className="text-base text-neutral-500">
-          Your management company deserves better. So do your residents.
-        </p>
-
-        <p className="text-xs text-amber-400 tracking-[0.2em] uppercase">
+        <p className="text-xs text-indigo-400 tracking-[0.2em] uppercase">
           It&apos;s HOA. But make it homely.
         </p>
 
         {/* Keyword chips */}
-        <div className="flex flex-wrap justify-center gap-2" aria-label="Key features">
+        <div className="flex flex-wrap justify-center gap-3" aria-label="Key features">
           {CHIPS.map((chip) => (
             <span
               key={chip}
-              className="text-xs border border-amber-500/40 text-amber-400/80 px-3 py-1 rounded-full"
+              className="text-xs border border-indigo-400/30 text-indigo-300/70 px-4 py-1.5 rounded-full tracking-wide"
             >
               {chip}
             </span>

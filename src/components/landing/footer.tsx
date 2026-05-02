@@ -16,13 +16,13 @@ function LinkedInIcon() {
 
 export function LandingFooter() {
   return (
-    <footer className="border-t border-amber-500/30 px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="border-t border-indigo-500/30 px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p className="text-xs text-neutral-600">© 2026 Hoamly</p>
 
       <div className="flex items-center gap-4">
         <a
           href="https://x.com/hoamly"
-          className="text-neutral-600 hover:text-amber-400 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D] rounded-sm"
+          className="text-neutral-600 hover:text-indigo-400 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D] rounded-sm"
           aria-label="Hoamly on X (Twitter)"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export function LandingFooter() {
         </a>
         <a
           href="https://linkedin.com/company/hoamly"
-          className="text-neutral-600 hover:text-amber-400 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D] rounded-sm"
+          className="text-neutral-600 hover:text-indigo-400 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D] rounded-sm"
           aria-label="Hoamly on LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export function LandingFooter() {
 
       <a
         href="mailto:hello@hoamly.ai"
-        className="text-xs text-neutral-600 hover:text-amber-400 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D] rounded-sm"
+        className="text-xs text-neutral-600 hover:text-indigo-400 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D] rounded-sm"
       >
         hello@hoamly.ai
       </a>
