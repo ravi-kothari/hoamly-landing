@@ -52,7 +52,7 @@ export function WaitlistForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm disabled:opacity-60 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D]"
+          className="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-2.5 rounded-lg transition-all text-sm disabled:opacity-60 whitespace-nowrap shadow-[0_0_20px_rgba(99,102,241,0.4)] hover:shadow-[0_0_28px_rgba(99,102,241,0.55)] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-[#0D0D0D]"
         >
           {status === 'loading' ? 'Sending…' : 'Request early access'}
         </button>

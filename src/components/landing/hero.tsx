@@ -47,25 +47,28 @@ export function LandingHero() {
           </p>
         </div>
 
-        <p className="text-xs text-indigo-400 tracking-[0.2em] uppercase">
-          It&apos;s HOA. But make it homely.
-        </p>
+        {/* CTA card */}
+        <div className="relative rounded-2xl border border-white/[0.07] bg-white/[0.03] backdrop-blur-sm px-8 py-8 space-y-6 shadow-[0_0_60px_-10px_rgba(99,102,241,0.15)]">
+          <p className="text-xs text-indigo-400 tracking-[0.2em] uppercase">
+            It&apos;s HOA. But make it homely.
+          </p>
 
-        {/* Keyword chips */}
-        <div className="flex flex-wrap justify-center gap-3" aria-label="Key features">
-          {CHIPS.map((chip) => (
-            <span
-              key={chip}
-              className="text-xs border border-indigo-400/30 text-indigo-300/70 px-4 py-1.5 rounded-full tracking-wide"
-            >
-              {chip}
-            </span>
-          ))}
+          {/* Keyword chips */}
+          <div className="flex flex-wrap justify-center gap-3" aria-label="Key features">
+            {CHIPS.map((chip) => (
+              <span
+                key={chip}
+                className="text-xs border border-indigo-400/30 text-indigo-300/70 px-4 py-1.5 rounded-full tracking-wide"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
+
+          <WaitlistForm />
+
+          <p className="text-xs text-neutral-600">No spam. No HOA fees.</p>
         </div>
-
-        <WaitlistForm />
-
-        <p className="text-xs text-neutral-600">No spam. No HOA fees.</p>
       </div>
     </section>
   )
