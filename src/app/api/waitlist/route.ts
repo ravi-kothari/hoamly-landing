@@ -14,15 +14,22 @@ export async function POST(request: NextRequest) {
     email: body.email,
   })
 
-  const res = await fetch(siteUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: formData.toString(),
-  }).catch(() => null)
+  try {
+    const res = await fetch(siteUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString(),
+      redirect: 'follow',
+    })
 
-  if (!res || !res.ok) {
+    if (!res.ok) {
+      console.error(`Netlify Forms returned ${res.status} for ${siteUrl}`)
+      return NextResponse.json({ error: 'Failed to join waitlist' }, { status: 500 })
+    }
+
+    return NextResponse.json({ message: "You're on the list!" })
+  } catch (err) {
+    console.error('Waitlist submission error:', err)
     return NextResponse.json({ error: 'Failed to join waitlist' }, { status: 500 })
   }
-
-  return NextResponse.json({ message: "You're on the list!" })
 }

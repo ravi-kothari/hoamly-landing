@@ -27,11 +27,7 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] flex flex-col">
-      {/* Hidden form so Netlify registers it at build time */}
-      <form name="waitlist" data-netlify="true" hidden>
-        <input type="email" name="email" />
-      </form>
-      <LandingNav />
+<LandingNav />
       <main className="flex-1">
         <LandingHero />
       </main>
